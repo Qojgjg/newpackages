@@ -211,7 +211,7 @@ jobs:
         cp -rf diy/.packages/* ./ || true
         rm -Rf */.git
     - name: SSH connection to Actions
-      uses: kiddin9/debugger-action@master
+      uses: gogogojason/debugger-action@master
       if: github.event.inputs.ssh == 'true'
 
     - name: Apply patches
